@@ -13,6 +13,14 @@
 
 #include "stm32f4xx_hal.h"
 
+
+/**
+ * @brief Initialize the logger unit.
+ * 
+ * @param huart the serial handler provided by ST HAL, normally this is "&huart2"
+ */
+void FEB_log_init(UART_HandleTypeDef *huart);
+
 /**
  * @brief Log a message to debug serial output. This function will append a CRLF newline at the end of the message.
  * 
